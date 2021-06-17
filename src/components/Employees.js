@@ -1,8 +1,10 @@
-const Employees = ({ employees }) => {
+import Employee from "./Employee";
+
+const Employees = ({ employees, onDelete }) => {
   return (
     <>
       {employees.map((employee) => (
-        <h3 key={employee.id}>{employee.empName}</h3>
+        <Employee key={employee.id} employee={employee} onDelete={onDelete} />
       ))}
     </>
   );

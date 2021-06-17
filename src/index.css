@@ -10,6 +10,16 @@ body {
   font-family: "Lora", sans-serif;
 }
 
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
+
 .navbar-brand {
   display: flex;
   justify-content: space-between;
@@ -24,4 +34,34 @@ body {
 
 .btn {
   padding: 10px, 20px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.employee {
+  background: f4f4f4;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.employee h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-form {
+  margin-bottom: 40px;
+}
+
+.footer {
+  margin-top: 30px;
+  text-align: center;
 }
